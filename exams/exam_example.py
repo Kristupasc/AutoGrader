@@ -3,9 +3,9 @@
 class ExamExample:
     """
     Class that can be copy pasted when creating a new exam. This is a foundation. For each question, you should
-    create a method that will grade the question. The method should take a grader object as an argument. The grader
-    object is used to check the student's code. The grader object has a method for each criterion that you want to check.
-    The method should return the points that the student should get for that criterion. The grader object also has a
+    create a method that will grade the question. The method should take a grading object as an argument. The grading
+    object is used to check the student's code. The grading object has a method for each criterion that you want to check.
+    The method should return the points that the student should get for that criterion. The grading object also has a
     feedback attribute that you can use to provide more detailed feedback to the student. The feedback should be a list
     of strings. The feedback will be displayed to the student if the student's code does not pass the criterion.
     The function should be named: question_<number> where <number> is the number of the question.

@@ -116,8 +116,8 @@ class Exam2023:
         points = 0
         # outputs can also be in a list of lists, where the first element is the input and the second is the expected output
         # this is useful if you want to check multiple test cases
-        # to put the output for the tester, use grader.set_output(outputs).
-        # to initiate the check, use grader.begin_output_analysis()
+        # to put the output for the tester, use grading.set_output(outputs).
+        # to initiate the check, use grading.begin_output_analysis()
         outputs = [
             [[], None],
             [[1, 2, "wrong", 4], None],
