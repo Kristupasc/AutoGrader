@@ -1,6 +1,9 @@
 
 
 class Exam2023:
+    """
+    This is the 2023_1 exam fully automated to grade. Used in the thesis paper.
+    """
     def __init__(self):
         self.points = {}
         self.feedback = {}
