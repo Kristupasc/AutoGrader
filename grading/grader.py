@@ -3,7 +3,7 @@ import ast
 import sys
 from io import StringIO
 
-from ast_visitor import LoopAndRecursionVisitor
+from grading.ast_visitor import LoopAndRecursionVisitor
 
 
 class Grader:
@@ -12,7 +12,7 @@ class Grader:
     """
     def __init__(self, func, output=None):
         """
-        Initialize the grader with a function and expected output. The function can either be an actual function or
+        Initialize the grading with a function and expected output. The function can either be an actual function or
         a string with the source code.
         """
         self.initialized = False
@@ -46,6 +46,9 @@ class Grader:
         self.initialized = True
 
     def set_output(self, output):
+        """
+        Sets the provided output
+        """
         self.output = output
 
     def begin_output_analysis(self):
