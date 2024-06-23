@@ -1,16 +1,14 @@
 import openpyxl
-from openpyxl.worksheet.table import Table, TableStyleInfo
 from openpyxl.styles import Alignment
-
 from grader import Grader
 
 
 class RunGrader:
     """
-    Class responsible to run the grader for all exercises in the exam. It uses the exam class created
-    by the grader to grade each exercise.
+    Class responsible to run the grading for all exercises in the exam. It uses the exam class created
+    by the grading to grade each exercise.
     :param data_file: The path to the data Excel file containing the exam data.
-    :param exam_class: The class that will be used to grade the exam (written by the grader)
+    :param exam_class: The class that will be used to grade the exam (written by the grading)
     :param questions: The list of questions that will be graded. For example: [5,6,7,8,9,10]
     """
 
@@ -20,7 +18,7 @@ class RunGrader:
         self.questions = questions
         self.candidates = {}  # candidate id: [[question_number, answer]]
         self.candidate_results = {}  # candidate id: [[question_number, points]]
-        print("Exam grader loaded. Ready to grade exams.")
+        print("Exam grading loaded. Ready to grade exams.")
 
     def begin(self):
         """
@@ -137,7 +135,7 @@ class RunGrader:
 
         print("total average points: ", sum([sum_questions[i] for i in sum_questions])/sum([graded[i] for i in graded]))
 
-    def export_results(self, filename="data/results.xlsx"):
+    def export_results(self, filename="../data/results.xlsx"):
         """
         Exports the results to an Excel file.
         """
