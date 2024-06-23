@@ -16,6 +16,7 @@ The primary objective of this project is to explore the feasibility of automatin
 * This tool is a proof-of-concept and is intended solely for academic purposes within the University of Twente.
 * The tool requires manual writing for the tests and the grading criteria.
 * Manual verification of the grading results is recommended to ensure accuracy.
+* The tool is underdeveloped, since it is just a proof-of-concept.
 
 ## Acknowledgements
 This project was developed as part of a thesis for the 41st Twente Student Conference on IT (TScIT41). 
